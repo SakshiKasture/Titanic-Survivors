@@ -195,3 +195,20 @@ grid_search.fit(x_train, y_train)
 #print("\nBest model:", grid_search.best_estimator_)
 print("\nBest Parameters for Random Forest:", grid_search.best_params_)
 print(f"Best ROC-AUC Score from Grid Search: {grid_search.best_score_}")
+
+'''Next steps - Can and should make changes like -
+Improvements:
+Handling Class Imbalance:
+
+You might want to try SMOTE (Synthetic Minority Over-sampling Technique) or class weight adjustments in your models to address the class imbalance.
+SMOTE can help by generating synthetic samples for the minority class to balance the dataset.
+Feature Engineering:
+
+You can add more informative features or interactions between existing ones, such as age ranges or interaction terms.
+Hyperparameter Tuning:
+
+You can further tune hyperparameters for Random Forest and Gradient Boosting to improve performance, particularly on the minority class.
+Ensemble Methods:
+
+Consider ensemble models or stacking models to combine the best of each model.
+'''
